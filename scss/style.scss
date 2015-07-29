@@ -1,0 +1,35 @@
+
+/*!
+Theme Name: Bedrock
+Theme URI: http://teachingmultimedia.com/web/wordpress/bedrock
+Description: Bedrock is a responsive WordPress framework based on ZURB's Foundation.
+Version: 0.1
+Author: Chris Stein
+Author URI: http://cuny.is/cstein
+License: MIT License
+License URI: http://www.opensource.org/licenses/mit-license.php
+*/
+/* --------------------------------------------------
+This stylesheet is generated Sass, http://sass-lang.com.
+To modify it, you should use the Sass files located in the scss folder.
+Most small changes can be done by changing the values in the foundation/_settings.scss file.
+-------------------------------------------------- */
+
+
+@import "vendor/normalize";
+
+//This imports quick foundation settings
+@import "foundation_quickset";
+
+//This imports the full Foundation scss
+@import "foundation";
+
+//These import styles specific to the theme
+@import "header"; //main header styling
+@import "footer"; //main footer styling
+@import "nav"; //navigation styling
+@import "home"; //styling specific to home.php
+
+
+//while it's good to break your styles into Sass's partials as above, you can add normall CSS and Sass below as you might do in a standard stylesheet
+

@@ -1,0 +1,15 @@
+//This imports the various foundation settings. It has been modified from the standard foundation settings file to break out pieces such as the grid, typography and colors
+
+// Allows the use of rem-calc() or lower-bound() in your settings. Required in the grid_media-queries.
+@import "functions";
+
+//Import the various settings
+@import "settings/base";
+@import "settings/grid_media-queries";
+@import "settings/color";
+@import "settings/typography";
+@import "settings/misc";
+@import "settings/components";
+
+
+

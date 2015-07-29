@@ -1,0 +1,23 @@
+//Styling of main header for the site
+
+.main-header{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    //add padding at larger sizes
+    @media #{$medium-up} {
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+    .site-title{
+        font-size: rem-calc(32);
+
+        a{
+            color: $jet; //you can use colors from foundation_quickset.scss file
+        }
+
+    }
+
+//    background-color: $light-blue;
+
+    //see _nav.scss for more on the default navigation settings
+}

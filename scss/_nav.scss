@@ -1,0 +1,112 @@
+//Styles the navigation
+
+
+// Simple Navigation
+// This is for the simple navigation that just makes the items into a horizontal list
+
+//the main-nav and .navlist classes come from the settings for the nav in header.php
+
+//this class is applied to the div surrounding the navigation
+.main-nav{
+
+    @media #{$medium-up} {
+        float: right;
+    }
+}
+
+//this class is applied to the main UL for the list
+.navlist{
+    //get rid of the default magin and padding on lists
+    margin:0;
+    padding:0;
+
+    @media #{$large-up} {
+        text-align: right; //keeps the nav elements aligned to the right
+    }
+    li{
+        display: inline;
+        list-style-type: none;
+        padding-right: 25px;
+
+        a{
+            line-height: 3rem;
+            vertical-align: middle;
+        }
+
+        //change color for current menu item
+        &.current-menu-item a{
+            color:lighten($button-bg-color, 10%);
+        }
+
+        //foundation media query
+        @media #{$large-up} {
+            //these lines make the links look like buttons at larger sizes. remove if you don't want that.
+            //color of buttons is set to $primary-color you can set in _color.scss.
+
+            a{
+                //style with foundation button
+               @include button($padding:$button-sml    , $bg:$button-bg-color, $radius:true, $full-width:false, $disabled:false, $is-prefix:false, $bg-hover:null, $border-color:null, $transition: true);
+                //reset the margin-bottom which is not needed
+                   margin-bottom: 0;
+            }
+
+            &.current-menu-item a{
+                //change button color for current nav item
+                @include button-style($bg:lighten($button-bg-color, 10%), $radius:false, $disabled:false, $bg-hover:null, $border-color:null);
+            }
+
+        }
+    }//end li
+
+} //end navlist
+
+
+//Secondary navigation styling
+// Code modified from Jonah Bell at http://codepen.io/jonbellah/pen/iwyFs
+.main-nav li.menu-item-has-children{
+    position: relative;
+}
+.main-nav .sub-menu {
+	visibility: hidden;
+	float: left;
+    min-width: 150px;
+	position: absolute;
+    transition: visibility 0.65s ease-in;
+    margin:0;
+    right:0; //	left: 0; //change to left if you want subnav aligned to left of parent
+	z-index: 999;
+    padding:.5em 0;
+
+    li {
+        clear: both;
+        padding: 0 0 1em .5em;
+        width: 100%;
+        display: block;
+        line-height: 1;
+    }
+
+    li:hover {
+    //	background: #74b7e4;
+    }
+
+    //small screen styling of links
+    background-color: $button-bg-color;
+
+    a{
+        color: $white;
+        line-height: 1;
+    }
+
+    //large screen styling of links
+    //foundation media query
+    @media #{$large-up} {
+        background-color: transparent;
+    }
+}
+
+//makes subnav visible when over main nav
+.main-nav ul li:hover > ul,
+.main-nav ul li ul:hover {
+   visibility: visible;
+}
+

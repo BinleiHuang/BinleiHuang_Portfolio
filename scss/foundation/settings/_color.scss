@@ -1,0 +1,52 @@
+
+//Foundation names for various grayscale colors from white to black
+// $white       : #FFFFFF;
+// $ghost       : #FAFAFA;
+// $snow        : #F9F9F9;
+// $vapor       : #F6F6F6;
+// $white-smoke : #F5F5F5;
+// $silver      : #EFEFEF;
+// $smoke       : #EEEEEE;
+// $gainsboro   : #DDDDDD;
+// $iron        : #CCCCCC;
+// $base        : #AAAAAA;
+// $aluminum    : #999999;
+// $jumbo       : #888888;
+// $monsoon     : #777777;
+// $steel       : #666666;
+// $charcoal    : #555555;
+// $tuatara     : #444444;
+// $oil         : #333333;
+// $jet         : #222222;
+// $black       : #000000;
+
+//sample colors
+// $blue        : #008CBA;
+// $light-blue  : #a0d3e8;
+// $light-grey   : #e7e7e7;
+// $orange      : #f08a24;
+// $orange-red  : #f04124;
+// $green       : #43AC6A;
+
+//Add your colors here
+
+//FOUNDATION COLOR VARIABLES
+// We use these as default colors throughout
+// Change them to fit your design, use colors you defined above for the values
+// Do not change the names ($primary-color, $secondary-color, $alert-color etc).
+// Just change the values ($blue, $off-white, $orange-red, $green etc.)
+ $primary-color: $blue;
+ $secondary-color: $light-grey;
+ $alert-color: $orange-red;
+ $success-color: $green;
+ $warning-color: $orange;
+ $info-color: $light-blue;
+
+// For base background and font colors see _typography.scss
+
+//Button colors have been included here for ease of use
+
+
+
+// For othercomponent colors see _components.scss
+

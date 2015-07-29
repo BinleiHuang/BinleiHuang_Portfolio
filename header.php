@@ -59,7 +59,7 @@
                         <ul>
                             <li><a href="photography">Photography</a>
                             </li>
-                            <li><a href="design">Design</a>
+                            <li><a href="design">Designnnnnn</a>
                             </li>
                             <li><a href="about=">About</a>
                             </li>

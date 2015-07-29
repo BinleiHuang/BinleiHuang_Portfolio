@@ -17,7 +17,7 @@
 
     <div class="row">
 
-    <p>    jidekaixin7@gmail.com </p>
+    <p>    jidekaixin7@gmail.commmmmmmmmmm </p>
     </div>
 </footer>
 </div>

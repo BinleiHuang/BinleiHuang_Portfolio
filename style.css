@@ -8169,6 +8169,7 @@ http://flickity.metafizzy.co
   overflow: hidden;
   position: relative;
   height: 100%;
+
 }
 
 .flickity-slider {
@@ -8287,8 +8288,9 @@ http://flickity.metafizzy.co
   display: inline-block;
   width: 10px;
   height: 10px;
+    color:white;
   margin: 0 8px;
-  background: #333;
+  background: white;
   border-radius: 50%;
   filter: alpha(opacity=25); /* IE8 */
   opacity: 0.25;
@@ -8298,6 +8300,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   filter: alpha(opacity=100); /* IE8 */
   opacity: 1;
+    color: white;
 }
 
 .gallery {
@@ -8330,5 +8333,25 @@ http://flickity.metafizzy.co
 .grid-item--width2 { width: 32%; }
         img{opacity: .9;}
 img:hover{opacity: 1;}
+
+
+
+
+.gallery-cell1 {
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  opacity: .8;
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell1.is-selected {
+  opacity: 1;
+}
+
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */

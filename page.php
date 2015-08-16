@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <!-- Row for main content area -->
-    <div class="row">
+
 
 
                 <?php /* Start the Loop */ ?>
@@ -11,7 +11,7 @@
                 <?php endwhile; ?>
 
 
-      </div>
+
     <!--end main content row-->
 
 

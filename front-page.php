@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-<div class="row">
-    <!-- Row for main content area -->
-    <div class="small-12 columns" id="content" role="main">
+
+    <div id="content" role="main">
 
         <?php /* Start the Loop */ ?>
         <?php while ( have_posts() ) : the_post(); ?>
@@ -10,7 +9,7 @@
         <?php endwhile; ?>
 
     </div>
-</div>
+
 
 
 

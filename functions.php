@@ -106,6 +106,14 @@ add_action( 'widgets_init', 'add_sidebars' );
         true);
 
 
+      wp_enqueue_script(
+        'mas',
+        get_stylesheet_directory_uri() . '/js/mas.js',
+        array(),
+        '1.0.0',
+        true);
+
+
 
       wp_enqueue_script(
         'modernizr',

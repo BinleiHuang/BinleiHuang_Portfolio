@@ -183,7 +183,7 @@ svg:not(:root) {
  */
 /* line 203, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/vendor/normalize */
 figure {
-  margin: 1em 40px; }
+  margin: auto; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -3127,7 +3127,7 @@ button::-moz-focus-inner {
 
 /* line 111, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/foundation/components/clearing */
 .clearing-caption {
-  color: #CCCCCC;
+  color: white;
   font-size: 0.875em;
   line-height: 1.3;
   margin-bottom: 0;
@@ -6611,7 +6611,7 @@ a {
   /* line 230, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/foundation/components/type */
   a img {
     border: none; }
-
+img{align-content: center;}
 /* Default paragraph styles */
 /* line 234, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/foundation/components/type */
 p {
@@ -6637,7 +6637,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Lato, sans-serif;
   font-weight: 900;
   font-style: normal;
-  color: #222222;
+  color: white;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -6645,7 +6645,7 @@ h1, h2, h3, h4, h5, h6 {
   /* line 262, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/foundation/components/type */
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #6f6f6f;
+    color: white;
     line-height: 0; }
 
 /* line 269, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/foundation/components/type */
@@ -8124,27 +8124,7 @@ footer {
   margin-right: auto; }
 #selflogo:hover{border: none;}
 
-/* line 111, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/style.scss */
-#brochure {
-  border: solid 2px white; }
 
-/* line 113, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/style.scss */
-#people {
-  border: solid 2px white; }
-
-/* line 116, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/style.scss */
-#scene {
-  border: solid 2px white; }
-
-/* line 117, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/style.scss */
-#travel {
-  border: solid 2px white; }
-
-/* line 118, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/style.scss */
-#other {
-  border: solid 2px white; }
-
-/* line 125, C:/Users/Administrator/Desktop/bedrock/bedrock/scss/style.scss */
 form {
   width: 300px;
   display: block;
@@ -8288,9 +8268,9 @@ http://flickity.metafizzy.co
   display: inline-block;
   width: 10px;
   height: 10px;
-    color:white;
+    color:transparent;
   margin: 0 8px;
-  background: white;
+  background: transparent;
   border-radius: 50%;
   filter: alpha(opacity=25); /* IE8 */
   opacity: 0.25;
@@ -8300,17 +8280,44 @@ http://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   filter: alpha(opacity=100); /* IE8 */
   opacity: 1;
-    color: white;
+    color: transparent;
 }
 
-.gallery {
+.galleryy {
   background: transparent;
 }
 
+
+@media (min-width: 1000px) {
+.gallery-cell{height: 700px;
+}
+
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 774px) and (max-width: 1000px) {
+.gallery-cell{height: 900px;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 773px) {
+.gallery-cell{height: 1350px;
+}
+}
+@media (max-width: 647px) {
+.gallery-cell{height: 1550px;
+}
+}
+/* Landscape phones and down */
+@media (max-width: 410px) {
+.gallery-cell{height: 3000px;
+}
+
+}
 .gallery-cell {
   width: 100%;
-  height: 600px;
-  margin-right: 10px;
+
+  margin-right: 0px;
   background: none;
   counter-increment: gallery-cell;
 }
@@ -8336,22 +8343,12 @@ img:hover{opacity: 1;}
 
 
 
-
-.gallery-cell1 {
-  width: 300px;
-  height: 300px;
-  margin-right: 10px;
-  opacity: .8;
-  counter-increment: gallery-cell;
-}
-
-.gallery-cell1.is-selected {
-  opacity: 1;
-}
+.wp-caption-text{color: white;
+    text-align: center;}
 
 
 
-
-
-
+p{color: white;
+font-family: 'Merriweather Sans', sans-serif;font-weight: 400;}
+h2,h3,h4,h5,h6{font-family: 'Merriweather Sans', sans-serif;font-weight: 400;}
 /*# sourceMappingURL=style.css.map */

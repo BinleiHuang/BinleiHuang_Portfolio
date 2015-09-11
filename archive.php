@@ -3,8 +3,8 @@
 <div id="archive" class="main-content">
 
 
-<div class="row">
-    <div class="small-12 columns">
+
+
 
         <?php //run the wordpress loop
         if (have_posts()) : //Set the title for the page the_post(); ?>
@@ -40,11 +40,11 @@
   						//print_r(get_queried_object());
                 ?>
             </p>
-    </div>
+
 <!--    end smal-12 that contains archive title-->
 
 
-    <div class="small-12 columns" id="content">
+    <div  id="content">
         <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
             <?php //Now show the posts
 
@@ -59,7 +59,7 @@
     </div>
 
         <?php else:  //there are no posts?>
-           <div class="small-12 columns" id="content">
+           <div id="content">
                 <!-- No posts were found for the archive. -->
                 <div class="nocontent">
                     <h2>No Posts Found</h2>
@@ -68,18 +68,18 @@
             </div>
         <?php endif; ?>
 
-    </div>
+
     <!-- end row for main posts -->
 
 </div>
 <!--end #archive .main-content-->
 
 
-<div class="row">
-    <div class="small-12 columns">
+
+
         <?php get_sidebar(); ?>
-    </div>
-</div>
+
+
 
 </div>
 <!--end #archive-->

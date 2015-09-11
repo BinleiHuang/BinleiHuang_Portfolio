@@ -2,8 +2,8 @@
 
 <!-- Row for main content area -->
 <div class="main-content">
-    <div class="row">
-           <div class="small-12 columns" id="content" role="main">
+
+           <div id="content" role="main">
             <h2>index.php</h2>
             <?php if ( have_posts() ) : ?>
                 <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" >
@@ -18,8 +18,7 @@
             <?php endif; // end have_posts() check ?>
 
 
-        </div>
-    </div>
+
     <!--end row-->
 
 

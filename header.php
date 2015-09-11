@@ -8,7 +8,7 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 
-	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?> Portfolio</title>
+	<title>  I AM BINLEI HUANG</title>
 
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 
@@ -20,20 +20,24 @@
 	<link rel="shortcut icon" type="image/png" href="http://wpmmp.bmcc.cuny.edu/~bhuang/portfolio/wp-content/uploads/2015/03/shortcut.jpg">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,400italic,300italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
     <?php wp_head(); ?>
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
 
-  <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: [ 'secondPage', '3rdPage'],
-				sectionsColor: [ '#1BBC9B', '#7E8F7C'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['First page', 'Second page', 'Third and last page']
-			});
-		});
-	</script>
+fbq('init', '797170630392892');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=797170630392892&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
 </head>
 
@@ -42,17 +46,17 @@
 
 <header class="main-header">
 
-    <div class="row">
-        <div class="large-12 medium-12 small-12 columns">
+
+
             <div class="title-area">
 
                 <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">BinleiHuang</a></h1>
 
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
+
+
+
+
 
                 <nav class="nav">
 
@@ -61,16 +65,18 @@
                             </li>
                             <li><a href="design">Design</a>
                             </li>
-                            <li><a href="about=">Aboutttttt</a>
+                            <li><a href="about=">About</a>
                             </li>
                             <li><a href="contact">Contact</a>
+                            </li>
+                            <li><a href="price">Price</a>
                             </li>
                         </ul>
 
                 </nav>
 
-        </div>
-    </div>
+
+
 
     <hr/>
 
